@@ -70,7 +70,14 @@ In order to run the application as a Docker container, while in project's root d
 
 ```
 docker build . -t gatlingtest
-docker run gatlingtest
+docker run -it gatlingtest -rm
+
+OR
+docker build . -t gatlingtest
+docker run -it gatlingtest bash -rm
+
+Once the container is running and you have access to bash:
+mvn clean gatling:test 
 ```
 
 
