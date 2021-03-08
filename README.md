@@ -14,7 +14,10 @@ In order to run a scenario class, please follow:
 ```
 git clone git@github.com:akarolewski/CloseApproachApiTests.git
 cd CloseApproachApiTests
-mvn clean gatling:test -Dgatling.simulationClass=com.CloseApproachSimulation
+
+mvn clean gatling:test    # run all simulations
+or
+mvn clean gatling:test -Dgatling.simulationClass=com.CloseApproachSimulation    # run specific simulation
 ```
 
 After test scenario will finish an example output should be presented with an URI
@@ -59,6 +62,17 @@ antonikarolewski@antek CloseApproachApiTests (master) $
 ```
 
 Here you can see it was: `/Users/antonikarolewski/CloseApproachApiTests/target/gatling/closeapproachsimulation-20210305114249384/index.html`
+
+
+## Docker
+
+In order to run the application as a Docker container, while in project's root directory please run following commands:
+
+```
+docker build . -t gatlingtest
+docker run gatlingtest
+```
+
 
 Feel free to open that in you browser to see a Gatling's generic simulation report.
 
