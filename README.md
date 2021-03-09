@@ -64,6 +64,8 @@ antonikarolewski@antek CloseApproachApiTests (master) $
 Here you can see it was: `/Users/antonikarolewski/CloseApproachApiTests/target/gatling/closeapproachsimulation-20210305114249384/index.html`
 
 
+Feel free to open that in you browser to see a Gatling's generic simulation report.
+
 ## Docker
 
 In order to run the application as a Docker container, while in project's root directory please run following commands:
@@ -73,6 +75,7 @@ docker build . -t gatlingtest
 docker run -it gatlingtest -rm
 
 OR
+
 docker build . -t gatlingtest
 docker run -it gatlingtest bash -rm
 
@@ -81,6 +84,5 @@ mvn clean gatling:test
 ```
 
 
-Feel free to open that in you browser to see a Gatling's generic simulation report.
 
 Other questions? - > `akarolewskia@gmail.com`
